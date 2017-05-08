@@ -1,0 +1,9 @@
+<p>
+  Here are all the categories!
+</p>
+
+<div *ngFor="let category of categories" (click)="goToDetailPage(category)" class="panel panel-default">
+  <div class="panel-body">
+    <h3><em>{{category.name}}</em></h3>    
+  </div>
+</div>
