@@ -1,4 +1,8 @@
 <div>
   <h1>{{categoryToDisplay.name}}</h1>
-  Its working!
+</div>
+<div *ngFor="let post of posts" (click)="goToPostDetailPage(post)" class="panel panel-success">
+  <div class="panel-body">
+    <h3>{{post.title}} - {{post.content}} - {{post.author}}</h3>
+  </div>
 </div>
